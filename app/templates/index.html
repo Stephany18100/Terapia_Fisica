@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploración Física</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
 <style>
     .card-header {
-    background-color:#420000;
-    color: white;
-}
+        background-color: #420000;
+        color: white;
+    }
 </style>
+
 <body>
 
     <div class="container mt-5">
@@ -27,144 +34,247 @@
             </div>
             <div class="card-body">
                 <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                        <label for="nombrePaciente" class="form-label">Nombre del Paciente:</label>
-                        <input type="text" class="form-control" id="nombrePaciente" required>
-                        <div class="valid-feedback">
-                            
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="fecha">Selecciona una fecha:</label>
+                    <div class="form-group col-md-8">
+                        <label for="fecha">Fecha de elaboración:</label>
                         <input type="date" class="form-control" id="fecha" name="fecha">
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="form-group col-md-4">
+                        <label for="folio" class="form-label">Folio:</label>
+                        <input type="text" class="form-control" id="folio" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 mt-1">
+                        <label for="nombrePaciente" class="form-label">Nombre del Paciente:</label>
+                        <input type="text" class="form-control" id="nombrePaciente" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-3 mt-1">
+                        <label for="sexo">Sexo:</label>
+                        <select class="form-control" id="sexo" name="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-3 mt-1">
+                        <label for="fecha">Fecha de Nacimiento:</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha">
+                    </div>
+
+                    <div class="form-group mt-1 col-md-8">
+                        <label for="lugarNacimiento" class="form-label">Lugar de nacimiento:</label>
+                        <input type="text" class="form-control" id="lugarNacimiento" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="civil">Estado Civil:</label>
+                        <select class="form-control" id="civil" name="civil">
+                            <option value="soltero">Soltero(a)</option>
+                            <option value="casado">Casado(a)</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-1 col-md-8">
                         <label for="ocupacion" class="form-label">Ocupación:</label>
                         <input type="text" class="form-control" id="ocupacion" required>
                         <div class="valid-feedback">
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="domicilio" class="form-label">Domicilio Actual:</label>
-                        <input type="text" class="form-control" id="domicilio" required>
-                        <div class="valid-feedback">
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="contactoEmergencia" class="form-label">Nombre y Teléfono de Contacto de Emergencia:</label>
-                        <input type="text" class="form-control" id="contactoEmergencia" required>
-                        <div class="valid-feedback">
-                          
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="diagnosticoMedico" class="form-label">Diagnóstico Médico:</label>
-                        <input type="text" class="form-control" id="diagnosticoMedico" required>
-                        <div class="valid-feedback">
-                          
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="sexo">Sexo:</label>
-                            <select class="form-control" id="sexo" name="sexo">
-                                <option value="masculino">Masculino</option>
-                                <option value="femenino">Femenino</option>
-                            </select>
-                        </div>
-
-                </div>
-            </div>
-
-                    <div class="col-md-4">
-                        <label for="estadoCivil" class="form-label">Estado Civil:</label>
-                        <input type="text" class="form-control" id="estadoCivil" required>
-                        <div class="valid-feedback">
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="form-group mt-1 col-md-4">
                         <label for="nacionalidad" class="form-label">Nacionalidad:</label>
                         <input type="text" class="form-control" id="nacionalidad" required>
                         <div class="valid-feedback">
-                           
                         </div>
                     </div>
-                    <div class="col-md-4">
+
+                    <div class="form-group mt-1 col-md-8">
+                        <label for="domicilio" class="form-label">Domicilio Actual:</label>
+                        <input type="text" class="form-control" id="domicilio" required>
+                        <div class="valid-feedback">
+
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
                         <label for="telefono" class="form-label">Número Telefónico:</label>
                         <input type="text" class="form-control" id="telefono" required>
                         <div class="valid-feedback">
-                            
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <p class="text-center col-md-12 mt-1">Contacto de Emergencia</p>
+
+                    <div class="col-md-8 form-group mt-1">
+                        <label for="nombreContactoEmergencia" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombreContactoEmergencia" required>
+                        <div class="valid-feedback">
+
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="telefonoEmergencia" class="form-label">Número Telefónico:</label>
+                        <input type="text" class="form-control" id="telefonoEmergencia" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 form-group mt-1">
+                        <label for="diagnosticoMedico" class="form-label">Diagnóstico Médico:</label>
+                        <input type="text" class="form-control" id="diagnosticoMedico" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="col-md-4 form-group mt-1">
+                        <label for="estadoCivil" class="form-label">Elaboró historial clínico:</label>
+                        <input type="text" class="form-control" id="estadoCivil" required>
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="col-md-4 form-group mt-1">
                         <label for="motivoConsulta" class="form-label">Motivo de Consulta:</label>
                         <input type="text" class="form-control" id="motivoConsulta" required>
                         <div class="valid-feedback">
-                           
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="edad" class="form-label">Edad:</label>
-                        <input type="number" class="form-control" id="edad" required>
-                        <div class="valid-feedback">
-                         
                         </div>
                     </div>
                 </form>
             </div>
         </div>
 
-
         <div class="card my-3">
             <div class="card-header">
-              Antecedentes Ginecobstétricos
+                Antecedentes Personales No Patológicos
             </div>
             <div class="card-body">
-              <div class="form-group">
-                <label for="menarquia">Menarquía:</label>
-                <input type="text" class="form-control" id="menarquia" placeholder="Menarquía">
-              </div>
-              <div class="form-group">
-                <label for="ultimaMenstruacion">Fecha de la última menstruación:</label>
-                <input type="text" class="form-control" id="ultimaMenstruacion" placeholder="Fecha de la última menstruación">
-              </div>
-              <div class="form-group">
-                <label for="caracteristicasMenstruacion">Características de la menstruación:</label>
-                <input type="text" class="form-control" id="caracteristicasMenstruacion" placeholder="Duración, frecuencia, cantidad de flujo, dolor, etc.">
-              </div>
-              <div class="form-group">
-                <label for="inicioVidaSexual">Inicio de la vida sexual:</label>
-                <input type="text" class="form-control" id="inicioVidaSexual" placeholder="Inicio de la vida sexual">
-              </div>
-              <div class="form-group">
-                <label for="usoAnticonceptivos">Uso de anticonceptivos:</label>
-                <input type="text" class="form-control" id="usoAnticonceptivos" placeholder="Uso de anticonceptivos">
-              </div>
-              <div class="form-group">
-                <label for="numEmbarazos">No. de embarazos:</label>
-                <input type="number" class="form-control" id="numEmbarazos" placeholder="Número de embarazos">
-              </div>
-              <div class="form-group">
-                <label for="numPartos">No. de partos:</label>
-                <input type="number" class="form-control" id="numPartos" placeholder="Número de partos">
-              </div>
-              <div class="form-group">
-                <label for="numCesareas">No. de cesáreas:</label>
-                <input type="number" class="form-control" id="numCesareas" placeholder="Número de cesáreas">
-              </div>
-              <div class="form-group">
-                <label for="observacionesGine">Observaciones:</label>
-                <input type="text" class="form-control" id="observacionesGine" placeholder="Observaciones">
-              </div>
-            </div>
-          </div>
+                <form class="row g-3 needs-validation" novalidate>
 
+                    <p class="text-center col-md-12 mt-1">Vivienda</p>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="tipocasa">Propia/Rentada:</label>
+                        <input type="text" class="form-control" id="tipocasa" placeholder="">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="ventilacion">Ventilación:</label>
+                        <input type="text" class="form-control" id="ventilacion" placeholder="ventilacion">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="iluminacion">Iluminación:</label>
+                        <input type="text" class="form-control" id="iluminacion" placeholder="">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="piso">Piso:</label>
+                        <input type="text" class="form-control" id="piso" placeholder="piso">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="electrodomesticos">Electrodomésticos:</label>
+                        <input type="text" class="form-control" id="electrodomesticos" placeholder="electrodomesticos">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="servicios">Servicios:</label>
+                        <input type="text" class="form-control" id="servicios" placeholder="">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-1 col-md-12">
+                        <label for="descripVivienda">Descripción de la vivienda:</label>
+                        <input type="text" class="form-control" id="descripVivienda" placeholder="">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <p class="text-center col-md-12 mt-1">Alimentación</p>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="noComidas">No. de comidas al día:</label>
+                        <input type="text" class="form-control" id="noComidas" placeholder="Número de Comidas">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="aguaLts">Agua(lts):</label>
+                        <input type="text" class="form-control" id="aguaLts" placeholder="aguaLts">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="gruposAlimenticios">Grupos alimenticios que consume:</label>
+                        <input type="text" class="form-control" id="gruposAlimenticios"
+                            placeholder="gruposAlimenticios">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-1 col-md-12">
+                        <label for="descripRutinaAlimentaria">Descripción de la rutina alimenticia:</label>
+                        <input type="text" class="form-control" id="descripRutinaAlimentaria"
+                            placeholder="descrip de la Rutina Alimentaria">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <p class="text-center col-md-12 mt-1">Higiene</p>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="higieneBucal">Higiene bucal:</label>
+                        <input type="text" class="form-control" id="higieneBucal" placeholder="higieneBucal">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="bañosxdia">Baños al día:</label>
+                        <input type="text" class="form-control" id="bañosxdia" placeholder="bañosxdia">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="cambiosRopa">Cambios de ropa:</label>
+                        <input type="text" class="form-control" id="cambiosRopa" placeholder="cambiosRopa">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+
+                    <p class="text-center col-md-12 mt-1">OCIO Y OCUPACIÓN (frecuencia, intensidad semanal) </p>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="actFisica">Actividad Física:</label>
+                        <input type="text" class="form-control" id="actFisica" placeholder="actFisica">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="deporte">Deporte:</label>
+                        <input type="text" class="form-control" id="deporte" placeholder="deporte">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="ocio">Ocio:</label>
+                        <input type="text" class="form-control" id="ocio" placeholder="ocio">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                    <div class="form-group mt-1 col-md-12">
+                        <label for="ocupacion">Ocupación:</label>
+                        <input type="text" class="form-control" id="ocupacion" placeholder="ocupacion">
+                        <div class="valid-feedback">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
 
         <div class="card my-3">
             <div class="card-header">
@@ -177,7 +287,9 @@
                             <th scope="col">Enfermedad</th>
                             <th scope="col">Sí</th>
                             <th scope="col">No</th>
-                            <th scope="col">Observaciones</th>
+                            <th scope="col">Parentesco</th>
+                            <th scope="col">Vivo</th>
+                            <th scope="col">Muerto</th>
                         </tr>
                     </thead>
                     <style>
@@ -191,37 +303,56 @@
                             <td>Cáncer</td>
                             <td><input type="checkbox" name="cancer" value="si"></td>
                             <td><input type="checkbox" name="cancer" value="no"></td>
-                            <td><input type="text" class="form-control" placeholder="Observaciones"></td>
+                            <td><input type="text" class="form-control" placeholder="Parentesco"></td>
+                            <td><input type="checkbox" name="cancer" value="1"></td>
+                            <td><input type="checkbox" name="cancer" value="0"></td>
+
                         </tr>
                         <tr>
                             <td>Diabetes</td>
                             <td><input type="checkbox" name="diabetes" value="si"></td>
                             <td><input type="checkbox" name="diabetes" value="no"></td>
-                            <td><input type="text" class="form-control" placeholder="Observaciones"></td>
+                            <td><input type="text" class="form-control" name="diabetes" placeholder="Parentesco"></td>
+                            <td><input type="checkbox" name="diabetes" value="1"></td>
+                            <td><input type="checkbox" name="diabetes" value="0"></td>
                         </tr>
                         <tr>
                             <td>Hipertensión</td>
                             <td><input type="checkbox" name="hipertension" value="si"></td>
                             <td><input type="checkbox" name="hipertension" value="no"></td>
-                            <td><input type="text" class="form-control" placeholder="Observaciones"></td>
+                            <td><input type="text" class="form-control" placeholder="Parentesco"></td>
+                            <td><input type="checkbox" name="hipertension" value="1"></td>
+                            <td><input type="checkbox" name="hipertension" value="0"></td>
                         </tr>
                         <tr>
                             <td>Enfermedades Cardiacas</td>
                             <td><input type="checkbox" name="cardiacas" value="si"></td>
                             <td><input type="checkbox" name="cardiacas" value="no"></td>
-                            <td><input type="text" class="form-control" placeholder="Observaciones"></td>
+                            <td><input type="text" class="form-control" placeholder="Parentesco"></td>
+                            <td><input type="checkbox" name="cardiacas" value="1"></td>
+                            <td><input type="checkbox" name="cardiacas" value="0"></td>
                         </tr>
                         <tr>
                             <td>Enfermedades Mentales</td>
                             <td><input type="checkbox" name="mentales" value="si"></td>
                             <td><input type="checkbox" name="mentales" value="no"></td>
-                            <td><input type="text" class="form-control" placeholder="Observaciones"></td>
+                            <td><input type="text" class="form-control" placeholder="Parentesco"></td>
+                            <td><input type="checkbox" name="mentales" value="1"></td>
+                            <td><input type="checkbox" name="mentales" value="0"></td>
                         </tr>
                         <tr>
                             <td>Alergias</td>
                             <td><input type="checkbox" name="alergias" value="si"></td>
                             <td><input type="checkbox" name="alergias" value="no"></td>
-                            <td><input type="text" class="form-control" placeholder="Observaciones"></td>
+                            <td><input type="text" class="form-control" placeholder="Parentesco"></td>
+                            <td><input type="checkbox" name="alergias" value="1"></td>
+                            <td><input type="checkbox" name="alergias" value="0"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">Otros: </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">Observaciones: </td>
                         </tr>
                     </tbody>
                 </table>
@@ -233,65 +364,134 @@
                 Antecedentes Personales Patológicos
             </div>
             <div class="card-body">
+                <table class="table table-bordered">
+                    <thead class="col">
+                        <tr>
+                            <th scope="col">Patologías</th>
+                            <th scope="col">Sí</th>
+                            <th scope="col">No</th>
+                            <th scope="col">Edad que se presento</th>
+                            <th scope="col">Secuelas / Complicaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Traumatismos</td>
+                            <td><input type="checkbox" name="Traumatismos" value="si"></td>
+                            <td><input type="checkbox" name="Traumatismos" value="no"></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>Cirugías</td>
+                            <td><input type="checkbox" name="Cirugías" value="si"></td>
+                            <td><input type="checkbox" name="Cirugías" value="no"></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td>Luxaciones</td>
+                            <td><input type="checkbox" name="Luxaciones" value="si"></td>
+                            <td><input type="checkbox" name="Luxaciones" value="no"></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td>Alergias</td>
+                            <td><input type="checkbox" name="Alergias" value="si"></td>
+                            <td><input type="checkbox" name="Alergias" value="no"></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td>Toxicomanías</td>
+                            <td><input type="checkbox" name="Toxicomanías" value="si"></td>
+                            <td><input type="checkbox" name="Toxicomanías" value="no"></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td>Padecimientos psiquiátricos </td>
+                            <td><input type="checkbox" name="psiquiátricos" value="si"></td>
+                            <td><input type="checkbox" name="psiquiátricos" value="no"></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Inmunizaciones: </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Observaciones: </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="card my-3">
+            <div class="card-header">
+                Antecedentes Ginecobstétricos
+            </div>
+            <div class="card-body">
                 <div class="form-group">
-                    <label for="infectoContagiosas">Infecto-contagiosas:</label>
-                    <input type="text" class="form-control" id="infectoContagiosas" placeholder="">
+                    <label for="menarquia">Menarquía:</label>
+                    <input type="text" class="form-control" id="menarquia" placeholder="Menarquía">
                 </div>
                 <div class="form-group">
-                    <label for="quirurgicos">Quirúrgicos:</label>
-                    <input type="text" class="form-control" id="quirurgicos" placeholder="">
+                    <label for="ultimaMenstruacion">Fecha de la última menstruación:</label>
+                    <input type="text" class="form-control" id="ultimaMenstruacion"
+                        placeholder="Fecha de la última menstruación">
                 </div>
                 <div class="form-group">
-                    <label for="traumaticos">Traumáticos:</label>
-                    <input type="text" class="form-control" id="traumaticos" placeholder="">
+                    <label for="caracteristicasMenstruacion">Características de la menstruación:</label>
+                    <input type="text" class="form-control" id="caracteristicasMenstruacion"
+                        placeholder="Duración, frecuencia, cantidad de flujo, dolor, etc.">
                 </div>
                 <div class="form-group">
-                    <label for="alergicos">Alérgicos:</label>
-                    <input type="text" class="form-control" id="alergicos" placeholder="">
+                    <label for="inicioVidaSexual">Inicio de la vida sexual:</label>
+                    <input type="text" class="form-control" id="inicioVidaSexual"
+                        placeholder="Inicio de la vida sexual">
                 </div>
                 <div class="form-group">
-                    <label for="hospitalarios">Hospitalarios:</label>
-                    <input type="text" class="form-control" id="hospitalarios" placeholder="">
+                    <label for="usoAnticonceptivos">Uso de anticonceptivos:</label>
+                    <input type="text" class="form-control" id="usoAnticonceptivos"
+                        placeholder="Uso de anticonceptivos">
                 </div>
                 <div class="form-group">
-                    <label for="medicamentos">Medicamentos:</label>
-                    <input type="text" class="form-control" id="medicamentos" placeholder="">
+                    <label for="numEmbarazos">No. de embarazos:</label>
+                    <input type="number" class="form-control" id="numEmbarazos" placeholder="Número de embarazos">
                 </div>
                 <div class="form-group">
-                    <label for="otrosPatologicos">Otros:</label>
-                    <input type="text" class="form-control" id="otrosPatologicos" placeholder="">
+                    <label for="numPartos">No. de partos:</label>
+                    <input type="number" class="form-control" id="numPartos" placeholder="Número de partos">
+                </div>
+                <div class="form-group">
+                    <label for="numCesareas">No. de cesáreas:</label>
+                    <input type="number" class="form-control" id="numCesareas" placeholder="Número de cesáreas">
+                </div>
+                <div class="form-group">
+                    <label for="observacionesGine">Observaciones:</label>
+                    <input type="text" class="form-control" id="observacionesGine" placeholder="Observaciones">
                 </div>
             </div>
         </div>
 
         <div class="card my-3">
             <div class="card-header">
-                Hábitos Personales
+                Antecedentes De Padecimiento Actual
             </div>
             <div class="card-body">
                 <div class="form-group">
-                    <label for="higiene">Higiene:</label>
-                    <input type="text" class="form-control" id="higiene" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="dieta">Dieta:</label>
-                    <input type="text" class="form-control" id="dieta" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="ejercicio">Ejercicio:</label>
-                    <input type="text" class="form-control" id="ejercicio" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="recreacion">Recreación:</label>
-                    <input type="text" class="form-control" id="recreacion" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="suenio">Sueño:</label>
-                    <input type="text" class="form-control" id="suenio" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="otroHabitos">Otros:</label>
-                    <input type="text" class="form-control" id="otroHabitos" placeholder="">
+                    <label for="describe">Describe: ¿Qué le paso? ¿hace cuánto? ¿cómo se lesiono? ¿qué síntomas
+                        presentó? ¿fue al médico ¿tomó algún medicamento? ¿se realizo algún estudio? ¿cuáles? ¿cómo ha
+                        evolucionado los síntomas? ¿hay alguna actividad o movimiento que intensifique los síntomas? ¿en
+                        algún momento del día se intensifica más? ¿existe alguna actividad que se ha visto limitada por
+                        hacer?, etc. :
+                    </label>
+                    <textarea class="form-control" name="describe" id="floatingTextarea2Disabled" style="height: 200px"
+                        placeholder="Escribe aquí"></textarea>
                 </div>
             </div>
         </div>
@@ -301,58 +501,47 @@
                 Exploración Física
             </div>
             <div class="card-body">
-                <div class="form-group">
-                    <label for="peso">Peso:</label>
-                    <input type="text" class="form-control" id="peso" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="talla">Talla:</label>
-                    <input type="text" class="form-control" id="talla" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="tensionArterial">Tensión arterial:</label>
-                    <input type="text" class="form-control" id="tensionArterial" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="frecuenciaCardiaca">Frecuencia cardiaca:</label>
-                    <input type="text" class="form-control" id="frecuenciaCardiaca" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="frecuenciaRespiratoria">Frecuencia respiratoria:</label>
-                    <input type="text" class="form-control" id="frecuenciaRespiratoria" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="temperatura">Temperatura:</label>
-                    <input type="text" class="form-control" id="temperatura" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="cabeza">Cabeza:</label>
-                    <input type="text" class="form-control" id="cabeza" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="cuello">Cuello:</label>
-                    <input type="text" class="form-control" id="cuello" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="torax">Tórax:</label>
-                    <input type="text" class="form-control" id="torax" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="abdomen">Abdomen:</label>
-                    <input type="text" class="form-control" id="abdomen" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="extremidades">Extremidades:</label>
-                    <input type="text" class="form-control" id="extremidades" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="genitales">Genitales:</label>
-                    <input type="text" class="form-control" id="genitales" placeholder="">
-                </div>
-                <div class="form-group">
-                    <label for="observacionesFisica">Observaciones:</label>
-                    <input type="text" class="form-control" id="observacionesFisica" placeholder="">
-                </div>
+                <form class="row g-3 needs-validation" novalidate>
+                    <p class="text-start col-md-12">1. Habitus exterior:</p>
+                    <div class="form-group col-md-12">
+                        <label for="habitusExte">¿cómo llega el px? (caminado, con apoyo, etc), ¿llega solo o
+                            acompañado?, personalidad (feliz, nervioso,
+                            etc):
+                        </label>
+                        <textarea class="form-control" name="habitusExte" id="habitusExte" style="height: 100px"
+                            placeholder="Escribe aquí"></textarea>
+                    </div>
+
+                    <p class="text-start col-md-12 mt-1">2. Somatometría:</p>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="peso">Peso:</label>
+                        <input type="text" class="form-control" id="peso" placeholder="">
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="talla">Altura:</label>
+                        <input type="text" class="form-control" id="talla" placeholder="">
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="tensionArterial">IMC:</label>
+                        <input type="text" class="form-control" id="tensionArterial" placeholder="">
+                    </div>
+
+                    <p class="text-start col-md-12 mt-1">3. Signos vitales:</p>
+                    <div class="form-group">
+                        <label for="frecuenciaCardiaca">Frecuencia cardiaca:</label>
+                        <input type="text" class="form-control" id="frecuenciaCardiaca" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="frecuenciaRespiratoria">Frecuencia respiratoria:</label>
+                        <input type="text" class="form-control" id="frecuenciaRespiratoria" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="temperatura">Temperatura:</label>
+                        <input type="text" class="form-control" id="temperatura" placeholder="">
+                    </div>
+
+                    
+                </form>
             </div>
         </div>
 
@@ -362,4 +551,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
