@@ -106,7 +106,8 @@
                         <div class="valid-feedback">
                         </div>
                     </div>
-                    <p class="text-center col-md-12 mt-1">Contacto de Emergencia</p>
+
+                    <p class="text-center col-md-12 mt-1"><strong>Contacto de Emergencia</strong></p>
 
                     <div class="col-md-8 form-group mt-1">
                         <label for="nombreContactoEmergencia" class="form-label">Nombre:</label>
@@ -151,7 +152,9 @@
             <div class="card-body">
                 <form class="row g-3 needs-validation" novalidate>
 
-                    <p class="text-center col-md-12 mt-1">Vivienda</p>
+                    <p class="text-center col-md-12 mt-1"><strong>Vivienda</strong></p>
+
+
                     <div class="form-group mt-1 col-md-4">
                         <label for="tipocasa">Propia/Rentada:</label>
                         <input type="text" class="form-control" id="tipocasa" placeholder="">
@@ -197,7 +200,9 @@
                         </div>
                     </div>
 
-                    <p class="text-center col-md-12 mt-1">Alimentación</p>
+                    <p class="text-center col-md-12 mt-1"><strong>Alimentación</strong></p>
+
+
                     <div class="form-group mt-1 col-md-4">
                         <label for="noComidas">No. de comidas al día:</label>
                         <input type="text" class="form-control" id="noComidas" placeholder="Número de Comidas">
@@ -226,7 +231,9 @@
                         </div>
                     </div>
 
-                    <p class="text-center col-md-12 mt-1">Higiene</p>
+                    <p class="text-center col-md-12 mt-1"><strong>Higiene</strong></p>
+
+
                     <div class="form-group mt-1 col-md-4">
                         <label for="higieneBucal">Higiene bucal:</label>
                         <input type="text" class="form-control" id="higieneBucal" placeholder="higieneBucal">
@@ -358,6 +365,8 @@
                 </table>
             </div>
         </div>
+
+        
 
         <div class="card my-3">
             <div class="card-header">
@@ -491,7 +500,8 @@
                         hacer?, etc. :
                     </label>
                     <textarea class="form-control" name="describe" id="floatingTextarea2Disabled" style="height: 200px"
-                        placeholder="Escribe aquí"></textarea>
+                        placeholder="Escribe aquí">
+                    </textarea>
                 </div>
             </div>
         </div>
@@ -501,8 +511,9 @@
                 Exploración Física
             </div>
             <div class="card-body">
-                <form class="row g-3 needs-validation" novalidate>
-                    <p class="text-start col-md-12">1. Habitus exterior:</p>
+                <div class="row g-3 needs-validation" novalidate>
+                    <p class="text-start col-md-12"><strong>1. Habitus exterior:</strong></p>
+
                     <div class="form-group col-md-12">
                         <label for="habitusExte">¿cómo llega el px? (caminado, con apoyo, etc), ¿llega solo o
                             acompañado?, personalidad (feliz, nervioso,
@@ -512,7 +523,7 @@
                             placeholder="Escribe aquí"></textarea>
                     </div>
 
-                    <p class="text-start col-md-12 mt-1">2. Somatometría:</p>
+                    <p class="text-start col-md-12 mt-1"><strong>2. Somatometría:</strong></p>
                     <div class="form-group mt-1 col-md-4">
                         <label for="peso">Peso:</label>
                         <input type="text" class="form-control" id="peso" placeholder="">
@@ -526,19 +537,360 @@
                         <input type="text" class="form-control" id="tensionArterial" placeholder="">
                     </div>
 
-                    <p class="text-start col-md-12 mt-1">3. Signos vitales:</p>
-                    <div class="form-group">
-                        <label for="frecuenciaCardiaca">Frecuencia cardiaca:</label>
-                        <input type="text" class="form-control" id="frecuenciaCardiaca" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="frecuenciaRespiratoria">Frecuencia respiratoria:</label>
-                        <input type="text" class="form-control" id="frecuenciaRespiratoria" placeholder="">
-                    </div>
-                    <div class="form-group">
+
+                    <p class="text-start col-md-12 mt-1"><strong>3. Signos vitales:</strong></p>
+                    <div class="form-group mt-1 col-md-4">
                         <label for="temperatura">Temperatura:</label>
                         <input type="text" class="form-control" id="temperatura" placeholder="">
                     </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="frecuenciaCardiaca">Pulso cardíaco:</label>
+                        <input type="text" class="form-control" id="frecuenciaCardiaca" placeholder="">
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="frecuenciaRespiratoria">Frecuencia respiratoria:</label>
+                        <input type="text" class="form-control" id="frecuenciaRespiratoria" placeholder="">
+                    </div>
+                    <div class="form-group mt-1 col-md-8">
+                        <label for="observacionesexplofisica">Observaciones:</label>
+                        <input type="text" class="form-control" id="observacionesexplofisica" placeholder="">
+                    </div>
+                    <div class="form-group mt-1 col-md-4">
+                        <label for="presionArterial">Presión arterial:</label>
+                        <input type="text" class="form-control" id="presionArterial" placeholder="">
+                    </div>
+
+                    <div class="form-group mt-1 col-md-12">
+                        <label for="resultadospreviosyactuales">Resultados previos y actuales de estudios de laboratorio y gabinete:</label>
+                        <input type="text" class="form-control" id="resultadospreviosyactuales" placeholder="">
+                    </div>
+
+                    <p class="text-center col-md-12 mt-1"><strong>Miembros inferiores</strong></p>
+
+                    <div class="form-group mt-1 col-md-6">
+                        <label for="observacionesMiembrosInferiores">Observaciones</label>
+                        <input type="text" class="form-control" id="observacionesMiembrosInferiores" placeholder="">
+                    </div>
+
+                    <div class="form-group mt-1 col-md-6">
+                        <label for="palpacionInferior">Palpación:</label>
+                        <input type="text" class="form-control" id="palpacionInferior" placeholder="">
+                    </div>
+
+                    <p class="text-center col-md-12 mt-1"><strong>Miembros Superiores</strong></p>
+
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="observacionesMiembrosSuperiores">Observaciones</label>
+                            <textarea class="form-control" name="observacionesMiembrosSuperiores" id="observacionesMiembrosSuperiores" style="height: 200px" placeholder="Describir: Vellosidad, coloración (escala de 'Von Luschan'), cicatrices, manchas, inflamación (tumoración, coloración, etc)"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="palpacionsuperior">Palpación:</label>
+                            <textarea class="form-control" name="palpacionsuperior" id="palpacionsuperior" style="height: 200px" placeholder="Describir: Consistencia, movilidad, elasticidad de la piel; temperatura, puntos de tensión y/o de dolor, etc."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label for="dolorSuperior"><u>Dolor</u></label>
+                        <div class="text-center">
+                            <img src="{{ url_for('static', filename='img/dolor.jpg') }}" class="img-fluid mt-3 mb-5" alt="dolor">
+                        </div>
+                        <textarea class="form-control" name="dolorSuperior" id="dolorSuperior" style="height: 100px"
+                            placeholder="Descripción del dolor (intensidad, frecuencia, tipo, localización, antigüedad, etc): "></textarea>
+                    </div>
+
+            <div class="form-group col-md-12">
+                <label for="Fuerzamuscular"><u>Fuerza muscular</u></label>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead class="col">
+                            <tr>
+                                <th scope="col">Izquierdo</th>
+                                <th scope="col">Movimiento</th>
+                                <th scope="col">Derecha</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Abducción y rotación superior de la escápula</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Elevación de la escápula</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Aducción de la escápula</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Aducción y descenso escapular</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Aducción y rotación inferior de la escápula</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Flexión del hombro</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Extensión de hombro</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Abducción del hombro</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Abducción horizontal del hombro</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Aducción horizontal del hombro</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Rotación externa del hombro</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Rotación interna del hombro</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Flexión de codo</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Extensión de codo</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Supinación del antebrazo</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Pronación del antebrazo</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Flexión de la muñeca</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                                <td>Extensión de la muñeca</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+
+                            </tr>
+                        </tbody>
+                        <label>* Escala de Daniels y Worthingham</label>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="form-group col-md-12">
+            <label for="goniometria"><u>Goniometría</u></label>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead class="col">
+                        <tr>
+                            <th scope="col">Rangos Normales</th>
+                            <th scope="col">Izquierdo</th>
+                            <th scope="col">Movimiento</th>
+                            <th scope="col">Derecha</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0° - 150°/170° </td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Flexión de hombro</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>0° - 40°</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Extensión de hombro</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td>0 - 160°/180°</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Abducción de hombro</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td>0°- 30°</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Aducción de hombro</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td>0° - 70° </td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Rotación externa de hombro</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td>0° - 70° </td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Rotación interna de hombro</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                        </tr>
+
+                        <tr>
+                            <td>0° - 150°</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Flexión de codo</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>0° (activa)
+                                10° (pasiva)</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Extensión de codo</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>0° - 90°</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Supinación del antebrazo</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>0° - 90°</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Pronación del antebrazo</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>0° - 25°-30° </td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Desviación radial de muñeca</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>0° - 30°-40°</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Desviación cubital de la muñeca</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>0° - 50°/60° </td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Flexión de muñeca</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>0° - 35°/60° </td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+                            <td>Extensión de muñeca</td>
+                            <td><input type="text" class="form-control" placeholder=""></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <label class="form-group col-md-8" for="Fuerzamuscular"><u>Reflejos osteotendinosos</u></label>
+
+    <div class="form-group col-md-8 mx-auto d-flex justify-content-center">
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead class="col">
+                    <tr>
+                        <th scope="col">IZQ</th>
+                        <th scope="col">ROT</th>
+                        <th scope="col">DER</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td>Bicipital</td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td>Tricipital</td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td>Braquioradial</td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td>Estiloradial</td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
                     
                 </form>
