@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecedentes Personales No Patológicos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- barra -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    
+    <div class="card my-3">
+        <div class="card-header">
+            Antecedentes Personales No Patológicos
+        </div>
+        <div class="card-body">
+            <form class="row g-3 needs-validation" novalidate>
+
+                <p class="text-center col-md-12 mt-1"><strong>Vivienda</strong></p>
+
+
+                <div class="form-group mt-1 col-md-4">
+                    <label for="tipocasa">Propia/Rentada:</label>
+                    <input type="text" class="form-control" id="tipocasa" placeholder="">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="ventilacion">Ventilación:</label>
+                    <input type="text" class="form-control" id="ventilacion" placeholder="ventilacion">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="iluminacion">Iluminación:</label>
+                    <input type="text" class="form-control" id="iluminacion" placeholder="">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+
+                <div class="form-group mt-1 col-md-4">
+                    <label for="piso">Piso:</label>
+                    <input type="text" class="form-control" id="piso" placeholder="piso">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="electrodomesticos">Electrodomésticos:</label>
+                    <input type="text" class="form-control" id="electrodomesticos" placeholder="electrodomesticos">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="servicios">Servicios:</label>
+                    <input type="text" class="form-control" id="servicios" placeholder="">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+
+                <div class="form-group mt-1 col-md-12">
+                    <label for="descripVivienda">Descripción de la vivienda:</label>
+                    <input type="text" class="form-control" id="descripVivienda" placeholder="">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+
+                <p class="text-center col-md-12 mt-1"><strong>Alimentación</strong></p>
+
+
+                <div class="form-group mt-1 col-md-4">
+                    <label for="noComidas">No. de comidas al día:</label>
+                    <input type="text" class="form-control" id="noComidas" placeholder="Número de Comidas">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="aguaLts">Agua(lts):</label>
+                    <input type="text" class="form-control" id="aguaLts" placeholder="aguaLts">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="gruposAlimenticios">Grupos alimenticios que consume:</label>
+                    <input type="text" class="form-control" id="gruposAlimenticios"
+                        placeholder="gruposAlimenticios">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+
+                <div class="form-group mt-1 col-md-12">
+                    <label for="descripRutinaAlimentaria">Descripción de la rutina alimenticia:</label>
+                    <input type="text" class="form-control" id="descripRutinaAlimentaria"
+                        placeholder="descrip de la Rutina Alimentaria">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+
+                <p class="text-center col-md-12 mt-1"><strong>Higiene</strong></p>
+
+
+                <div class="form-group mt-1 col-md-4">
+                    <label for="higieneBucal">Higiene bucal:</label>
+                    <input type="text" class="form-control" id="higieneBucal" placeholder="higieneBucal">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="bañosxdia">Baños al día:</label>
+                    <input type="text" class="form-control" id="bañosxdia" placeholder="bañosxdia">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="cambiosRopa">Cambios de ropa:</label>
+                    <input type="text" class="form-control" id="cambiosRopa" placeholder="cambiosRopa">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+
+                <p class="text-center col-md-12 mt-1"><strong>OCIO Y OCUPACIÓN (frecuencia, intensidad semanal)
+                    </strong> </p>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="actFisica">Actividad Física:</label>
+                    <input type="text" class="form-control" id="actFisica" placeholder="actFisica">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="deporte">Deporte:</label>
+                    <input type="text" class="form-control" id="deporte" placeholder="deporte">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-4">
+                    <label for="ocio">Ocio:</label>
+                    <input type="text" class="form-control" id="ocio" placeholder="ocio">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="form-group mt-1 col-md-12">
+                    <label for="ocupacion">Ocupación:</label>
+                    <input type="text" class="form-control" id="ocupacion" placeholder="ocupacion">
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
