@@ -14,8 +14,9 @@
 <body>
 
     <!-- barra lateral -->
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-dark bg-dark sticky-top mb-3">
         <div class="container-fluid">
+<<<<<<< HEAD
           <a class="navbar-brand" href="#">.......</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,6 +25,73 @@
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">......</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+=======
+            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">.......</a>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">......</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ url_for('index')}}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('fichaIdentificacion')}}">FichaIdentificacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('MiemSuperior')}}">MiebroSuperior</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('MiemInferior')}}">MiembroInferior</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('CabezayTorax')}}">CabezayTorax</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('PersoNoPatologicos')}}">PersoNoPatologicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('AnteGinecobstetricos')}}">AnteGinecobstetricos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('PersoPatologicos')}}">PersoPatologicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('PadecimientoActual')}}">PadecimientoActual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('HeredoFam')}}">HeredoFam</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+>>>>>>> e2ced48 (navbaryrutas)
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -54,6 +122,7 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </nav>
     
       <!-- Exploración -->
@@ -75,6 +144,19 @@
                     <textarea class="form-control" name="habitusExte" id="habitusExte" style="height: 100px"
                         placeholder="Escribe aquí"></textarea>
                 </div>
+=======
+    </nav>
+    <!-- Exploración -->
+
+    <div class="container mb-5">
+        <div class="card">
+            <div class="card-header">
+                Exploración Física
+            </div>
+            <div class="card-body">
+                <div class="row g-3 needs-validation" novalidate>
+                    <p class="text-start col-md-12"><strong>1. Habitus exterior:</strong></p>
+>>>>>>> e2ced48 (navbaryrutas)
 
                 <p class="text-start col-md-12 mt-1"><strong>2. Somatometría:</strong></p>
                 <div class="form-group mt-1 col-md-4">
@@ -478,6 +560,97 @@
 
                     </table>
                 </div>
+<<<<<<< HEAD
+=======
+                <div class="form-group col-md-12">
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead class="col">
+                                <tr>
+                                    <th colspan="3" class="text-center">PRUEBAS Y EVALUACIONES COMPLEMENTARIAS</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Pruebas</th>
+                                    <th scope="col">Resultados y análisis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+                <label class="form-group col-md-12" for="Fuerzamuscular"><u>Elevación de la postura:</u></label>
+
+                <div class="form-group row col-md-12 mx-auto d-flex justify-content-center">
+                    <div class="card-body col-md-6">
+                        <table class="table table-bordered">
+                            <thead class="col">
+                                <th colspan="3" class="text-center">Vista Frontal</th>
+                                <tr>
+                                    <th scope="col">Alineación corporal</th>
+                                    <th scope="col">Observaciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cabeza</td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Hombros</td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Miembros Superiores</td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Tronco</td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Cadera</td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Rodillas</td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Pies</td>
+                                    <td><input type="text" class="form-control" placeholder=""></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="{{ url_for('static', filename='img/VistaFrontal.jpg') }}" class="img-fluid mt-5 mb-6"
+                            alt="VistaFrontal" style="width: 400px;">
+                    </div>
+
+                </div>
+>>>>>>> e2ced48 (navbaryrutas)
             </div>
 
             <label class="form-group col-md-12" for="Fuerzamuscular"><u>Elevación de la postura:</u></label>
@@ -530,8 +703,68 @@
                     <img src="{{ url_for('static', filename='img/VistaFrontal.jpg') }}" class="img-fluid mt-5 mb-6"
                     alt="VistaFrontal">
                 </div>
+<<<<<<< HEAD
                 
             </div>
+=======
+                <div class="col-md-6 text-center">
+                    <img src="{{ url_for('static', filename='img/VistaLateral.jpg') }}" class="img-fluid mt-5 mb-6"
+                        alt="VistaLateral" style="width: 400px;">
+                </div>
+
+            </div>
+            <div class="form-group row col-md-12 mx-auto d-flex justify-content-center">
+                <div class="col-md-6">
+                    <table class="table table-bordered">
+                        <thead class="col">
+                            <th colspan="3" class="text-center">Vista Posterior</th>
+                            <tr>
+                                <th scope="col">Alineación corporal</th>
+                                <th scope="col">Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cabeza</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Hombros</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Miembros Superiores</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Tronco</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Cadera</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Rodillas</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Pies</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{{ url_for('static', filename='img/VistaPosterior.jpg') }}" class="img-fluid mt-5 mb-6"
+                        alt="VistaPosterior" style="width: 400px;">
+                </div>
+
+            </div>
+
+>>>>>>> e2ced48 (navbaryrutas)
         </div>
 
         <div class="form-group row col-md-12 mx-auto d-flex justify-content-center">
