@@ -903,8 +903,7 @@
                         <table class="table table-bordered">
                             <thead class="col">
                                 <tr>
-                                    <th colspan="3" class="text-center">PRUEBAS Y EVALUACIONES COMPLEMENTARIAS
-                                    </th>
+                                    <th colspan="3" class="text-center">PRUEBAS Y EVALUACIONES COMPLEMENTARIAS</th>
                                 </tr>
                                 <tr>
                                     <th scope="col">Pruebas</th>
@@ -935,12 +934,13 @@
                     </div>
                 </div>
 
-                <label class="form-group col-md-8" for="Fuerzamuscular"><u>EVALUACIÓN DE LA POSTURA:</u></label>
+                <label class="form-group col-md-12" for="Fuerzamuscular"><u>Elevación de la postura:</u></label>
 
                 <div class="form-group row col-md-12 mx-auto d-flex justify-content-center">
-                    <div class="card-body col-md-8">
+                    <div class="card-body col-md-6">
                         <table class="table table-bordered">
                             <thead class="col">
+                                <th colspan="3" class="text-center">Vista Frontal</th>
                                 <tr>
                                     <th scope="col">Alineación corporal</th>
                                     <th scope="col">Observaciones</th>
@@ -948,40 +948,151 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>.....</td>
+                                    <td>Cabeza</td>
                                     <td><input type="text" class="form-control" placeholder=""></td>
                                 </tr>
                                 <tr>
-                                    <td>.....</td>
+                                    <td>Hombros</td>
                                     <td><input type="text" class="form-control" placeholder=""></td>
                                 </tr>
                                 <tr>
-                                    <td>.....</td>
+                                    <td>Miembros Superiores</td>
                                     <td><input type="text" class="form-control" placeholder=""></td>
                                 </tr>
                                 <tr>
-                                    <td>.....</td>
+                                    <td>Tronco</td>
                                     <td><input type="text" class="form-control" placeholder=""></td>
                                 </tr>
                                 <tr>
-                                    <td>.....</td>
+                                    <td>Cadera</td>
                                     <td><input type="text" class="form-control" placeholder=""></td>
                                 </tr>
                                 <tr>
-                                    <td>.....</td>
+                                    <td>Rodillas</td>
                                     <td><input type="text" class="form-control" placeholder=""></td>
                                 </tr>
                                 <tr>
-                                    <td>.....</td>
+                                    <td>Pies</td>
                                     <td><input type="text" class="form-control" placeholder=""></td>
                                 </tr>
+                            
                             </tbody>
-
+    
                         </table>
+                    </div> 
+                    <div>
+                        <img src="{{ url_for('static', filename='img/VistaFrontal.jpg') }}" class="img-fluid mt-5 mb-6"
+                        alt="VistaFrontal">
                     </div>
+                    
                 </div>
             </div>
+
+            <div class="form-group row col-md-12 mx-auto d-flex justify-content-center">
+                <div class="card-body col-md-6">
+                    <table class="table table-bordered">
+                        <thead class="col">
+                            <th colspan="3" class="text-center">Vista Lateral</th>
+                            <tr>
+                                <th scope="col">Alineación corporal</th>
+                                <th scope="col">Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cabeza</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Hombros</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Miembros Superiores</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Tronco</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Cadera</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Rodillas</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Pies</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                        
+                        </tbody>
+
+                    </table>
+                </div> 
+                <div>
+                    <img src="{{ url_for('static', filename='img/VistaLateral.jpg') }}" class="img-fluid mt-5 mb-6"
+                    alt="VistaLateral">
+                </div>
+                
+            </div>
+            <div class="form-group row col-md-12 mx-auto d-flex justify-content-center">
+                <div class="card-body col-md-6">
+                    <table class="table table-bordered">
+                        <thead class="col">
+                            <th colspan="3" class="text-center">Vista Posterior</th>
+                            <tr>
+                                <th scope="col">Alineación corporal</th>
+                                <th scope="col">Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cabeza</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Hombros</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Miembros Superiores</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Tronco</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Cadera</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Rodillas</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                            <tr>
+                                <td>Pies</td>
+                                <td><input type="text" class="form-control" placeholder=""></td>
+                            </tr>
+                        
+                        </tbody>
+
+                    </table>
+                </div> 
+                <div>
+                    <img src="{{ url_for('static', filename='img/VistaPosterior.jpg') }}" class="img-fluid mt-5 mb-6"
+                    alt="dolor">
+                </div>
+                
+            </div>
+
+        </div>
+
             <!-- aqui es el final -->
+             
         </div>
 
 
