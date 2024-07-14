@@ -7,8 +7,6 @@ def index():
     # return "Hola mundo!"
     return render_template('ExploracionFisicaMiemSuper.html')
 
-<<<<<<< HEAD
-=======
 @app.route('/CabezayTorax')
 def CabezayTorax():
     return render_template('ExploracionFisicaCabezaYtorax.html')
@@ -34,6 +32,5 @@ def HeredoFam():
     return render_template('AntecedentesHeredofamiliares.html')
 
 # hola
->>>>>>> db1b41a (appcommit)
 if __name__ =='__main__' : 
     app.run(debug=True, port=5000)
